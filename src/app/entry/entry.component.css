@@ -1,0 +1,42 @@
+:host {
+  display: block;
+  padding: 0 25%;
+}
+
+#title {
+  margin: 50px 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.user {
+  font-weight: 500;
+  font-size: 20px;
+  gap: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin: -0.5px;
+  height: max-content;
+}
+
+#table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-collapse: collapse;
+}
+
+.details-button {
+  font-size: 14px;
+  border: none;
+  background-color: #b7c2d0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#description {
+  margin-bottom: 50px;
+}

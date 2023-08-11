@@ -1,0 +1,13 @@
+<div *ngIf="responseData">
+  <h2 id="title">მომხმარებლები</h2>
+  <h3 id="description">
+    ვებ-გვერდზე შეგიძლიათ შეამოწმოთ ინფორმაცია მომხმარებლების შესახებ და ასევე
+    იხილოთ მათ მიერ გამოქვეყნებული პოსტები.
+  </h3>
+  <div id="table">
+    <div class="user" *ngFor="let item of responseData">
+      <p class="username">{{ item.name }}</p>
+      <button class="details-button">დეტალურად</button>
+    </div>
+  </div>
+</div>
