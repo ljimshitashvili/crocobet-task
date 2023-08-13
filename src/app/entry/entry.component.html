@@ -7,7 +7,9 @@
   <div id="table">
     <div class="user" *ngFor="let item of responseData">
       <p class="username">{{ item.name }}</p>
-      <button class="details-button">დეტალურად</button>
+      <button class="details-button" (click)="navigateToUserDetails(item.id)">
+        დეტალურად
+      </button>
     </div>
   </div>
 </div>
