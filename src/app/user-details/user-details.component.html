@@ -1,7 +1,21 @@
 <div *ngIf="userData">
-  <h2>User Details</h2>
+  <h2>მომხმარებლის სრული ინფორმაცია</h2>
   <p><strong>Name:</strong> {{ userData.name }}</p>
+  <p>
+    <strong>Address:</strong> {{ userData.address.city }},
+    {{ userData.address.street }}, {{ userData.address.suite }},
+    {{ userData.address.zipcode }}, <strong>GEO:</strong>
+    {{ userData.address.geo.lat }}
+    {{ userData.address.geo.lng }}
+  </p>
+  <p>
+    <strong>Company:</strong> {{ userData.company.bs }},
+    {{ userData.company.catchPhrase }},
+    {{ userData.company.name }}
+  </p>
   <p><strong>Email:</strong> {{ userData.email }}</p>
+  <p><strong>Phone:</strong> {{ userData.phone }}</p>
   <p><strong>Username:</strong> {{ userData.username }}</p>
-  <!-- ... other user details ... -->
+  <p><strong>Website:</strong> {{ userData.website }}</p>
+  <button>მომხმარებლის პოსტები</button>
 </div>

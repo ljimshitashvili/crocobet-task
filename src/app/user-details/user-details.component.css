@@ -1,0 +1,36 @@
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 14px;
+  color: #003e5e;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 50px 0;
+  color: #003e5e;
+  align-self: center;
+}
+
+button {
+  font-size: 14px;
+  border: none;
+  background-color: #00acf8;
+  color: #f7f7f8;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: fit-content;
+  padding: 15px;
+  margin-top: 50px;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #0176ab;
+  transition: all 0.3s;
+}

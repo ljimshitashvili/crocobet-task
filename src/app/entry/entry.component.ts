@@ -17,6 +17,8 @@ export class EntryComponent implements OnInit {
     const URL = 'https://jsonplaceholder.typicode.com/users';
     console.log(this.responseData);
 
+    console.log(this.responseData);
+
     axios
       .get(URL)
       .then((response) => {

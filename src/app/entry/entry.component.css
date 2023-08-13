@@ -7,6 +7,7 @@
   margin: 50px 0;
   text-align: center;
   font-weight: 700;
+  color: #003e5e;
 }
 
 .user {
@@ -17,9 +18,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 1px solid #0176ab;
   margin: -0.5px;
   height: max-content;
+  color: #003e5e;
 }
 
 #table {
@@ -31,12 +33,19 @@
 .details-button {
   font-size: 14px;
   border: none;
-  background-color: #b7c2d0;
+  background-color: #00acf8;
+  color: #f7f7f8;
   border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
 }
 
+.details-button:hover {
+  background-color: #0176ab;
+  transition: all 0.3s;
+}
+
 #description {
   margin-bottom: 50px;
+  color: #003e5e;
 }
