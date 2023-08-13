@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import axios from 'axios';
 
 @Component({
@@ -11,7 +11,7 @@ export class UserDetailsComponent implements OnInit {
   userId!: number;
   userData: any;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
@@ -31,5 +31,9 @@ export class UserDetailsComponent implements OnInit {
       .catch((error: any) => {
         console.log(error);
       });
+  }
+
+  navigateToUserPosts(userId: number): void {
+    this.router.navigate(['/posts', userId]);
   }
 }

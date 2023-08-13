@@ -17,5 +17,7 @@
   <p><strong>Phone:</strong> {{ userData.phone }}</p>
   <p><strong>Username:</strong> {{ userData.username }}</p>
   <p><strong>Website:</strong> {{ userData.website }}</p>
-  <button>მომხმარებლის პოსტები</button>
+  <button (click)="navigateToUserPosts(userData.id)">
+    მომხმარებლის პოსტები
+  </button>
 </div>
