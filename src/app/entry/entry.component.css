@@ -1,6 +1,6 @@
 :host {
   display: block;
-  padding: 0 25%;
+  padding: 0 10%;
 }
 
 #title {
@@ -25,9 +25,8 @@
 }
 
 #table {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-collapse: collapse;
+  display: flex;
+  flex-direction: column;
 }
 
 .details-button {
@@ -47,5 +46,15 @@
 
 #description {
   margin-bottom: 50px;
+  text-align: center;
   color: #003e5e;
+}
+
+@media (min-width: 1024px) {
+  #table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-collapse: collapse;
+    justify-content: center;
+  }
 }
