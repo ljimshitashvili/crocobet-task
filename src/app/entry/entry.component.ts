@@ -35,8 +35,4 @@ export class EntryComponent implements OnInit {
   navigateToUserDetails(userId: number): void {
     this.router.navigate(['/user', userId]);
   }
-
-  navigateToUserPosts(userId: number): void {
-    this.router.navigate(['/posts', userId]);
-  }
 }

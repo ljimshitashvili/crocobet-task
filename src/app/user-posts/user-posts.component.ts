@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./user-posts.component.css'],
 })
 export class UserPostsComponent implements OnInit {
-  userPosts: any;
+  userPosts: any[] = [];
   userId!: number;
 
   constructor(private route: ActivatedRoute) {}
@@ -30,5 +30,9 @@ export class UserPostsComponent implements OnInit {
       .catch((error: any) => {
         console.log(error);
       });
+  }
+
+  getUserPostsByUserId(userId: number) {
+    return this.userPosts.filter((post: any) => post.userId === userId);
   }
 }
